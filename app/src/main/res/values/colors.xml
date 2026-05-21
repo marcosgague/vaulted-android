@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#101418</color>
+    <color name="surface">#1A2128</color>
+    <color name="surface_input">#222B33</color>
+    <color name="surface_alt">#26313A</color>
+    <color name="input_stroke">#5F6E7A</color>
+    <color name="accent">#4FD1C5</color>
+    <color name="accent_dark">#2BAEA3</color>
+    <color name="specs_surface">#10272C</color>
+    <color name="specs_text">#E8FFFC</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A8B3BD</color>
+    <color name="text_muted">#75828E</color>
+    <color name="nav_selected">#4FD1C5</color>
+    <color name="nav_unselected">#A8B3BD</color>
+</resources>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/surface_input"
+        android:hint="Buscar juego"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingHorizontal="14dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        app:selectionRequired="false"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipHoras"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mas jugados"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/surface"
+            app:chipStrokeColor="@color/accent"
+            app:chipStrokeWidth="1dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipNombre"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-Z"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/surface"
+            app:chipStrokeColor="@color/accent"
+            app:chipStrokeWidth="1dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipRecientes"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recientes"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/surface"
+            app:chipStrokeColor="@color/accent"
+            app:chipStrokeWidth="1dp"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/btnSync"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="Re-sincronizar Steam"
+        android:textColor="@color/accent"
+        app:strokeColor="@color/accent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLibraryGames"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.vaulted.DashboardFragment"
+        android:label="Dashboard"/>
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.vaulted.LibraryFragment"
+        android:label="Biblioteca"/>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.vaulted.SearchFragment"
+        android:label="Buscar"/>
+
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.example.vaulted.FriendsFragment"
+        android:label="Chat"/>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.vaulted.NotificationsFragment"
+        android:label="Notificaciones"/>
+
+    <fragment
+        android:id="@+id/linkAccountsFragment"
+        android:name="com.example.vaulted.LinkAccountsFragment"
+        android:label="Perfil"/>
+
+    <fragment
+        android:id="@+id/gameDetailFragment"
+        android:name="com.example.vaulted.GameDetailFragment"
+        android:label="Detalle"/>
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.vaulted.UserProfileFragment"
+        android:label="Perfil"/>
+
+</navigation>

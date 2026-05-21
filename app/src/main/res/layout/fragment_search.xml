@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Buscar"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Busca usuarios por @ o nombre"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/searchSocial"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/surface_input"
+        android:hint="Busca @usuario o nombre"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingHorizontal="14dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"/>
+
+    <TextView
+        android:id="@+id/tvPeopleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Personas"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPeopleSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:id="@+id/tvSearchEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Empieza escribiendo un @usuario o nombre"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+</LinearLayout>
